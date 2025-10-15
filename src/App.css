@@ -1,0 +1,209 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  padding: 20px;
+}
+
+.store {
+  width: 100%;
+}
+
+/* === Переключатель выравнивается вправо === */
+.icon-switch {
+  font-size: 36px;
+  cursor: pointer;
+  color: #555;
+  display: block;
+  text-align: right;
+  margin-bottom: 20px;
+  padding-right: 20px;
+}
+
+.view-toggle {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 20px 20px;
+}
+
+/*  Cards View: три карточки в ряд  */
+.cards-view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.shop-card {
+  width: 300px;       
+  height: 300px;
+  padding: 16px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: black;
+  transition: transform 0.2s ease;
+}
+
+.shop-card:hover {
+  transform: translateY(-4px);
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+
+.card-title {
+  font-weight: normal;
+  font-size: 18px;
+  margin: 0;
+}
+
+.card-color {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-price {
+  color: #b22222;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.card-button {
+  border: 2px solid #b22222;
+  background: transparent;
+  color: #b22222;
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.card-button:hover {
+  background: #b22222;
+  color: white;
+}
+
+/* === List View: растягивается на ширину экрана === */
+.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0 20px;
+}
+
+.shop-item {
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr 100px auto;
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+  background-color: #f5f5f5;
+  transition: background-color 300ms;
+  padding: 0px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.item-image {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+}
+
+.item-title {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.item-color {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+.item-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #c00;
+}
+
+.item-button {
+  padding: 8px 16px;
+  border: 2px solid #c00;
+  color: #c00;
+  background: transparent;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+}
